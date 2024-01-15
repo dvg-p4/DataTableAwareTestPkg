@@ -2,4 +2,3 @@
 
 export(get_first_column_of_dataframe)
 export(get_first_row_of_datatable)
-import(data.table)

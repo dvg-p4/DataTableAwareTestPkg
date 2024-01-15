@@ -1,6 +1,3 @@
-#' @import data.table
-NULL
-
 #' Get the first row of a data.table
 #'
 #' Returns `dt[1]`, which for a data.table is the first row,
@@ -10,6 +7,7 @@ NULL
 #' @return `dt[1]`, the first row
 #' @export
 get_first_row_of_datatable = function(dt) {
+  .datatable.aware = TRUE
   return(dt[1])
 }
 
@@ -23,6 +21,5 @@ get_first_row_of_datatable = function(dt) {
 #' @return `df[1]`, the first column, as a data.frame/table
 #' @export
 get_first_column_of_dataframe = function(df) {
-  .datatable.aware = FALSE
   return(df[1])
 }
